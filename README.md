@@ -53,7 +53,7 @@ The `name` has to be one of these:
 |strikeThrough|''|It bars the selected word|
 |delete|''|Delete the selected word|
 |selectAll|''|Selects the whole paragraph|
-|justifyFull|''|Align the text|
+|justifyFull|''|Aligns the text|
 |justifyCenter|''|Aligns the text in the middle|
 |justifyLeft|''|Aligns the text in the left|
 |justifyRight|''|Aligns the text in the right|
