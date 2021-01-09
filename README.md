@@ -16,6 +16,22 @@ Then, create a instance of `JSContentEditableCreator`:
 new JSContentEditableCreator(language: Language, parent?: string)
 ```
 
+Create your contenteditable element with this method:
+
+```
+.createContentEditable(attributes?: {
+    name: string;
+    value: any;
+}[])
+```
+
+For example:
+
+```
+var contentCreator = new JSContentEditableCreator(new Text(), "body");
+contentCreator.createContentEditable([{name: 'class', value: 'myCSSclass'}]);
+```
+
 ## The languages
 
 You can define different customisations for certain languages. By default, the language is `new Text()`, but it also exists `new JSON()` and `new SQL()`. How do you create your own language?
