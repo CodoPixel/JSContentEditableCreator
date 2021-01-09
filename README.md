@@ -22,7 +22,7 @@ You can define different customisations for certain languages. By default, the l
 
 ```
 class TypeScript extends Language {
-    constructor(content) {
+    constructor(content: string = "") {
         super(content)
 
         this.name = "TypeScript";
