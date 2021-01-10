@@ -13,7 +13,7 @@ First of all, don't forget to add the source code:
 Then, create a instance of `JSContentEditableCreator`:
 
 ```
-new JSContentEditableCreator(language: Language = new Text(), parent?: string)
+new JSContentEditableCreator(language?: Language = new Text(), parent?: string)
 ```
 
 Create your contenteditable element with this method:
