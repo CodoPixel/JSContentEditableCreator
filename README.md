@@ -13,13 +13,13 @@ First of all, don't forget to add the source code:
 Then, create a instance of `JSContentEditableCreator`:
 
 ```javascript
-var creator = new JSContentEditableCreator();
+var contentCreator = new JSContentEditableCreator();
 ```
 
 Create your contenteditable element with this method:
 
 ```javascript
-creator.createContentEditable();
+contentCreator.createContentEditable();
 ```
 
 For example:
@@ -55,7 +55,7 @@ contentCreator.createContentEditable();
 The user can select specific parts of a sentence inside the contenteditable element in order to change its style (put some words in _italic_ for example). It can be releazed via this method:
 
 ```
-.applyStyleForSelection(name: string, value: string = ''): void
+.applyStyleForSelection(name: string, value: string = '')
 ```
 
 The `name` has to be one of these:
