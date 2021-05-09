@@ -23,7 +23,7 @@
             align-items: center;
         }
 
-        /* customise only the contenteditable elements with language 'Text' */
+        /* customise only the contenteditable elements with language 'TextLanguage' */
         div[data-language='Text'] {
             width: 100%;
             padding: 15px;
@@ -44,7 +44,8 @@
     </div>
 
     <script>
-        var contentCreator = new JSContentEditableCreator(new Text("Valeur par défaut..."), "#container");
+        const container = document.querySelector("#container");
+        const contentCreator = new JSContentEditableCreator(new TextLanguage("Valeur par défaut..."), container);
         contentCreator.createContentEditable();
     </script>
 </body>
